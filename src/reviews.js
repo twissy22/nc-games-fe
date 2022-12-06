@@ -1,4 +1,4 @@
-import { useEffect, useState, useContext} from "react";
+import { useEffect, useState} from "react";
 import {getReviews} from "./api"
 const Reviews = () => {
     const [reviews, setReviews] = useState([]);
