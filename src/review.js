@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import { getReview } from './api';
+import Comments from './comments';
 
 
 const Review = () => {
@@ -9,7 +10,6 @@ const Review = () => {
     const {review_id} = useParams();
     useEffect(()=>{
         getReview(review_id).then((res)=>{
-            console.log(res)
         setReview(res.reviews)
         setLoading(false)
     })
@@ -28,7 +28,8 @@ const Review = () => {
     <h4>Votes: {review[0].votes}</h4>
     <h4>Category: {review[0].category}</h4>
     <h4>Date Created: {review[0].created_at}</h4>
-    <img src= { review[0].review_img_url} className="photo"></img>
+    <img src= { review[0].review_img_url} className="photoreview"></img>
+    <Comments />
     </section>
  )
 
