@@ -1,6 +1,7 @@
 import './App.css';
 import Header from "./header"
 import Reviews from "./reviews"
+import Review from "./review"
 import Nav from './nav'
 import {Routes, Route} from 'react-router-dom'
 
@@ -12,6 +13,7 @@ function App() {
       <Nav />
       <Routes>
   <Route path="/" element={<Reviews />}/>
+  <Route path="/reviews/:review_id" element={<Review />}/>
 </Routes>
       </header>
     </div>
