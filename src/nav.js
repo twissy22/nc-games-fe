@@ -8,7 +8,7 @@ const user = useContext(UserContext)
         <nav className='Nav'>
 <Link to="/" className="Nav__link">Home</Link>
 <Link to="/myUserpage" className="Nav__link">Userpage</Link>
-<span> logged in as {user.user.name}</span>
+<span className='Nav__link_logged'> logged in as {user.user.name}</span>
         </nav>
     )
 }
