@@ -16,7 +16,6 @@ const Review = () => {
 
     },[review_id])
 
-    console.log(review)
  return loading ? (
     <p>...Loading</p>
   ) : (
