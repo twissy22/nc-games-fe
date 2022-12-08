@@ -7,6 +7,28 @@ ul{
     margin-inline-end: 0px;
     padding-inline-start: 0px;
 }
+.errorbox{
+  background-color: #9FA8B2;
+  padding: 0.4em;
+  color: #3D3B48; 
+  display:inline-block; 
+}
+.comments__list{
+  list-style: none;
+  margin: 1em;
+}
+.comments__list h4{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; 
+  list-style: none;
+  display: block;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
 .pic{
   width: 12em;
   border: black;
@@ -18,7 +40,7 @@ ul{
 text-align: left;
 background-color: #AA5746;
 }
-.photoreview{
+.photoreview {
   width: 20em;
   border: black;
   border-width: 5px;
@@ -112,5 +134,32 @@ color: #3D3B48;
   .viewmoreinfo{
     place-items:right ;
     padding: 0.8em 0.5em;
+    }
+    .comments__list{
+      list-style: none;
+      margin: 1em;
+    }
+    .comments__list h4{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap; 
+      list-style: none;
+      display: block;
+      margin-block-start: 0.5em;
+      margin-block-end: 0.5em;
+      margin-inline-start: 0.5px;
+      margin-inline-end: 0.5px;
+      padding-inline-start: 0.5px;
+    }
+    .from{
+      margin:0em;
+      padding:0em;
+      margin-block-start: 0em;
+      margin-block-end: 0em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+    }
+    .submitbutton{
+      padding:0.2em
     }
 }
