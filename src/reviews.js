@@ -1,18 +1,19 @@
 import { useEffect, useState } from "react";
 import { getReviews, getReview } from "./api";
 import {Link} from 'react-router-dom'
+import { useParams } from "react-router-dom";
 
 const Reviews = () => {
   const [reviews, setReviews] = useState([]);
-
+  const { category } = useParams();
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    getReviews().then((reviews) => {
+    getReviews(category).then((reviews) => {
       setReviews(reviews.reviews);
       setLoading(false);
     });
-  }, []);
+  }, [category]);
 
   return loading ? (
     <p>...Loading</p>
