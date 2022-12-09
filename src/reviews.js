@@ -6,7 +6,6 @@ import { useParams } from "react-router-dom";
 const Reviews = () => {
   const [reviews, setReviews] = useState([]);
   const { category } = useParams();
-  console.log(category)
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {

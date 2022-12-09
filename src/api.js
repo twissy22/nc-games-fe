@@ -5,10 +5,8 @@ const reviewsApi = axios.create({
 
 export const getReviews = (category) => {
   let path = "/reviews";
-  if (category){
-    path+= `/?category=${category}`
-  }
-  return reviewsApi.get(path).then((data) => {
+
+  return reviewsApi.get(path,{params:{category}}).then((data) => {
     return data.data;
   });
 };
