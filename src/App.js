@@ -4,6 +4,7 @@ import Reviews from "./reviews"
 import Review from "./review"
 import Nav from './nav'
 import {Routes, Route} from 'react-router-dom'
+import Categories from './categories';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Header />
       <Nav />
       <Routes>
+      <Route path="/category/:category"element={<Reviews />}/>
   <Route path="/" element={<Reviews />}/>
   <Route path="/reviews/:review_id" element={<Review />}/>
 </Routes>
