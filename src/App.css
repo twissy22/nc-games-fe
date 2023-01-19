@@ -7,6 +7,10 @@ ul{
     margin-inline-end: 0px;
     padding-inline-start: 0px;
 }
+h3{
+  margin: 0.2em;
+  padding: 0.2;
+} 
 
 .errorbox{
   background-color: #9FA8B2;
@@ -31,36 +35,45 @@ ul{
   padding-inline-start: 0px;
 }
 .pic{
-  width: 12em;
+  width: 16em;
+  HEIGHT: 16em;
   border: black;
   border-width: 5px;
   border-style: solid;
 }
 .listing {
-  padding: 0.3em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0.1em;
 text-align: left;
 background-color: #AA5746;
 }
-.photoreview {
-  width: 20em;
-  border: black;
-  border-width: 5px;
-  border-style: solid;
-}
-.reviewstitle {
-  padding: 0.3em;
-  display: block;
-  font-size: 1em;
+h2{
+  padding: none;
+  
+  font-size: 1.5em;
   margin-block-start: 0em;
   margin-block-end: 0em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+  font-weight: bold;
+
 }
+.photoreview {
+  width: 25em;
+  border: black;
+  border-width: 5px;
+  border-style: solid;
+}
+
 .viewmoreinfo{
 font-size: 1em;
-  margin-left: 0.3em;
-align-content: right;
-padding: 1em 0.8em;
+  margin: 0em;
+  padding:0em;
+align-content: center;
+padding: 0.8em 0.8em;
+
 background-color: #9FA8B2;
 border: black;
 border-width: 3px;
@@ -140,25 +153,34 @@ li a {
   padding: 4px 8px;
   text-decoration: none;
 }
+.sortby{
+  margin-left: 0.2em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0.1em;
+  }
+  .sortbox{
+    padding:0.5em;
+
+  }
+  .sortbutton{
+    margin-top: 0.6em;
+    padding: 0.4em;
+    margin-left: 0.1em;
+    height:2em
+  }
 
 li a:hover:not(.active) {
   background-color: #ddd;
 }
-@media screen and (min-width:700px){
+@media screen and (min-width:715px){
 .listing {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
     }
-    .reviewstitle  {
-      display: block;
-      font-size: 1.2em;
-      margin-block-start: 0em;
-      margin-block-end: 0em;
-      margin-inline-start: 0px;
-      margin-inline-end: 0px;
-      font-weight: bold;
-    }
+ 
  
   .App{
       background-size: cover;
@@ -226,5 +248,40 @@ li a:hover:not(.active) {
     li a:hover:not(.active) {
       background-color: #ddd;
     }
-    
+    h3.reviewstitle{ 
+      width:500px
+    }   
+    h3{ 
+      margin: 0.2em;
+      padding: 0.2;
+      white-space: normal !important;
+  
+    } 
+    text{
+      display: flex;
+      flex:wrap;
+    }
+    .pic{
+      width: 12em;
+      HEIGHT: 12em;
+      border: black;
+      border-width: 5px;
+      border-style: solid;
+    }
+    .sortby{
+    margin-left: 0.2em;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      padding: 0.1em;
+    }
+    .sortbox{
+      padding:0.5em;
+
+    }
+    .sortbutton{
+      margin: 0.8em;
+      padding: 0.4em;
+      height:2em
+    }
 }
