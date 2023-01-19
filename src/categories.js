@@ -13,7 +13,7 @@ const Categories = () => {
 
   return (
     <ul className="ulcategories">
-        <li><Link to="/" class="active" href="#home">Home</Link></li>
+        <li><Link to="/" href="#home">Home</Link></li>
       {categories.map((category) => {
         return (
           <li key={category.slug} className="Categorylinks">

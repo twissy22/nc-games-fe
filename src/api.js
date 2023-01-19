@@ -3,9 +3,14 @@ const reviewsApi = axios.create({
   baseURL: "https://magnificent-hospital-gown-duck.cyclic.app/api",
 });
 
-export const getReviews = (category) => {
+export const getReviews = (category,query,order) => {
   let path = "/reviews";
-
+if(query){
+  path += query
+}
+if(order){
+  path += `&order=${order}`
+}
   return reviewsApi.get(path,{params:{category}}).then((data) => {
     return data.data;
   });
@@ -51,4 +56,11 @@ let path = "/categories";
 return reviewsApi.get(path).then((data) => {
   return data.data;
 });
-};
+}
+export const deleteComment = (comment_id)=>
+{
+  let path = `/comments/${comment_id}`
+return reviewsApi.delete(path).then((data)=>{
+  console.log(data.data)
+})
+}

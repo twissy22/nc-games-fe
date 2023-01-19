@@ -70,7 +70,7 @@ const Review = () => {
 
       <h4>Category: {review[0].category}</h4>
       <h4>Date Created: {formatDate(review[0].created_at)}</h4>
-      <img src={review[0].review_img_url} className="photoreview"></img>
+      <img src={review[0].review_img_url} alt={review[0].title}className="photoreview"></img>
       <h2>Comments</h2>
       <CommentForm review_id={review[0].review_id} comments={comments} setComments = {setComments}/>
       <Comments review_id={review[0].review_id} comments={comments} setComments = {setComments}/>
