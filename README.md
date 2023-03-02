@@ -1,3 +1,13 @@
+link to my hosted FE app https://gentle-brioche-254710.netlify.app/
+
+The app is a React app of board games reviews, it uses the end points from my back end project to display various reviews and comments on reviews. The reviews can be sorted by game category and sorted by various means in descending or ascending order. You can vote for a review and also comment and then delete the comment that you made. 
+
+back end repo https://github.com/twissy22/BE-NC-Games
+
+To clone the project click Code on github and them copy the url from HTTPS and write the command git clone <"copied url">, you will need to npm install to install dependencies. 
+
+Minimum version of Node.js is 18.9.0
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
